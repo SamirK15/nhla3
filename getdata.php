@@ -2,17 +2,20 @@
 
 
 $query='SELECT * FROM teams ORDER BY name';
+$team_button = "checked";
+$city_button = "unchecked";
+
 
 if (isset($_GET['submit'])){
   if(isset($_GET['order'])){
-    if($_GET['order'] == "team"{
-        echo "You have selected :".$_GET['order'];
-        $query .='SELECT * FROM teams ORDER BY name';
-        $init = 0;
+    echo "ORDERED BY :".$_GET['order'];
+    if($_GET['order'] == "team"){
+        $query ='SELECT * FROM teams ORDER BY name';
+        $team_button = "checked";
     }
     if($_GET['order'] == "city"){
-      echo "You have selected :".$_GET['order'];
       $query ='SELECT * FROM teams ORDER BY city';
+      $city_button = "checked";
     }    //  Displaying Selected Value
   }
 }
@@ -37,8 +40,6 @@ while ($row = pg_fetch_row($result)) {
    echo "<th>";
    echo "$row[1] </th>";
    echo "<th>";
-   echo "$row[2] </th>";
-   echo "</tr>";
 }
 echo "</table>";
 ?>
