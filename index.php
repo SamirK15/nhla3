@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>  Welcome to MA APP  </title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
   <?php include 'connectdb.php';?>
@@ -11,7 +11,6 @@
     <span>ADD TEAM</span>
   </div>
   <h1>
-  <?php include 'delete.php';?>
   Welcome boi this is a total trainwreck</h1>
   <?php include 'getdata.php';?>
   <form action="index.php" method="GET">

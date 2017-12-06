@@ -11,24 +11,15 @@ while ($row = pg_fetch_row($result)){
 }
 ?>
 
-
-
 <script type="text/javascript">
 var deleteID = <?php echo json_encode($a, JSON_PRETTY_PRINT); ?>;
-
-console.log(deleteID);
-
 var list = document.getElementById("idList");
-
 for (var i = 0; i < deleteID.length; i++){
   var option = document.createElement("OPTION");
-  console.log(deleteID[i].id);
   option.value = deleteID[i].id;
   option.text = deleteID[i].id + " " + deleteID[i].name;
-  console.log(option.text);
   list.add(option);
 }
-
 </script>
 
 
