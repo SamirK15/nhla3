@@ -13,7 +13,7 @@ pg_close($connection);
 ?>
 
 <script type="text/javascript">
-var gameID = <?php echo json_encode($a, JSON_PRETTY_PRINT); ?>;
+var deleteID = <?php echo json_encode($a, JSON_PRETTY_PRINT); ?>;
 var list = document.getElementById("idList");
 for (var i = 0; i < deleteID.length; i++){
   var option = document.createElement("OPTION");

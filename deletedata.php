@@ -10,6 +10,7 @@
     <a href="index.php" > HOME </a>
     <a href="deletedata.php" > DELETE </a>
     <a href="updatedata.php" > UPDATE </a>
+    <a href="ofdata.php"> OFFICIALS</a>
     <span>ADD TEAM</span>
   </div>
 
