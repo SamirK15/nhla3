@@ -10,6 +10,8 @@ if (isset($_POST['delete'])){
     exit();
     }
 }
+
+pg_close($connection);
 ?>
 <script type="text/javascript">
 var c = <?php echo $sql; ?>;

@@ -23,23 +23,19 @@ $result = pg_query($query);
 if (!$result) {
    die ("Database query failed!");
 }
-echo "<table>";
-echo "<tr>";
-echo "<th>";
-echo "Team ID</th>";
-echo "<th>";
-echo "Team Name</th>";
-echo "<th>";
-echo "City</th>";
-echo "</tr>";
+echo "<table>
+<tr>
+<th>Team ID</th>
+<th>Team Name</th>
+<th> City </th>
+</tr>";
 
 while ($row = pg_fetch_row($result)) {
-   echo "<tr>";
-   echo "<th>";
-   echo "$row[0] </th>";
-   echo "<th>";
-   echo "$row[1] </th>";
-   echo "<th>";
+   echo "<tr> <th>".$row[0]. "</th>
+   <th>" .$row[1]. "</th>
+   <th>" .$row[2]. "</th>
+   </tr>";
 }
 echo "</table>";
+pg_close($connection);
 ?>

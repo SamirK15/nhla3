@@ -7,7 +7,9 @@
 <body>
 
   <div>
+    <a href="index.php" > HOME </a>
     <a href="deletedata.php" > DELETE </a>
+    <a href="updatedata.php" > UPDATE </a>
     <span>ADD TEAM</span>
   </div>
   <h1>
