@@ -1,5 +1,5 @@
 <?php
-
+ include 'connectdb.php';
 
 $query='SELECT * FROM teams ORDER BY name';
 $team_button = "checked";

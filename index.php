@@ -5,7 +5,7 @@
 
 </head>
 <body>
-  <?php include 'connectdb.php';?>
+
   <div>
     <a href="deletedata.php" > DELETE </a>
     <span>ADD TEAM</span>

@@ -24,3 +24,5 @@ for (var i = 0; i < deleteID.length; i++){
 
 
 8fsMbEpd7n
+
+CREATE TABLE Plays (t_id CHAR(2), score INT NOT NULL,g_id CHAR(2),FOREIGN KEY (t_id) REFERENCES Teams(team_id) ON DELETE CAS,FOREIGN KEY (g_id) REFERENCES Games(game_id) ON DELETE CASCADE, PRIMARY KEY (t_id,g_id));
