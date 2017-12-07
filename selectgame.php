@@ -14,12 +14,12 @@ pg_close($connection);
 ?>
 
 <script type="text/javascript">
-var deleteID = <?php echo json_encode($a, JSON_PRETTY_PRINT); ?>;
+var gameAndCity = <?php echo json_encode($a, JSON_PRETTY_PRINT); ?>;
 var list = document.getElementById("gameIdList");
-for (var i = 0; i < deleteID.length; i++){
+for (var i = 0; i < gameAndCity.length; i++){
   var option = document.createElement("OPTION");
-  option.value = deleteID[i].id;
-  option.text = deleteID[i].id + " " + deleteID[i].name;
+  option.value = gameAndCity[i].id;
+  option.text = gameAndCity[i].id + " " + gameAndCity[i].name;
   list.add(option);
 }
 </script>

@@ -11,6 +11,7 @@
     <a href="deletedata.php" > DELETE </a>
     <a href="updatedata.php" > UPDATE </a>
     <a href="ofdata.php"> OFFICIALS</a>
+    <a href="gameview.php"> GAME </a>
     <span>ADD TEAM</span>
   </div>
   <h1>
