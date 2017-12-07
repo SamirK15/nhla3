@@ -19,6 +19,8 @@ if(isset($_GET['getGame'])){
   $name1 = $row[0];
   $city1 = $row[1];
   $score1 = $row[2];
+
+  include 'head.php';
   echo "<table class='table-striped'>
   <tr>
   <th class='team1'> $name1 </th>

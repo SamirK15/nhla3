@@ -14,7 +14,7 @@ echo'
     <a class="nav-link" href="index.php" > HOME </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="deleteview.php" > DELETE </a>
+    <a class="nav-link" href="teamview.php" > TEAM </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="updateview.php" > UPDATE </a>
