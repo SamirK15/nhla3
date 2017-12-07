@@ -1,21 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>  Welcome to MA APP  </title>
-
-</head>
-<body>
-
-  <div>
-    <a href="index.php" > HOME </a>
-    <a href="deletedata.php" > DELETE </a>
-    <a href="updatedata.php" > UPDATE </a>
-    <a href="ofdata.php"> OFFICIALS</a>
-    <a href="gameview.php"> GAME </a>
-    <span>ADD TEAM</span>
-  </div>
-  <h1>
-  Welcome boi this is a total trainwreck</h1>
+<?php include 'head.php'?>
   <?php include 'getdata.php';?>
   <form action="index.php" method="GET">
   <label>
@@ -29,5 +12,3 @@
   <input type="submit" name="submit">
   </form>
 </body>
-</html>
-8fsMbEpd7n

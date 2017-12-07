@@ -7,7 +7,7 @@ $result = pg_query($query);
 if (!$result) {
    die ("Database query failed!");
 }
-echo "<table>
+echo "<table class='table-striped'>
 <tr>
 <th> ID </th>
 <th> First Name </th>

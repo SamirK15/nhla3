@@ -23,7 +23,7 @@ $result = pg_query($query);
 if (!$result) {
    die ("Database query failed!");
 }
-echo "<table>
+echo "<table class='table-striped'>
 <tr>
 <th>Team ID</th>
 <th>Team Name</th>

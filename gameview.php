@@ -1,20 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>  Welcome to MA APP  </title>
-
-</head>
-<body>
-
-  <div>
-    <a href="index.php" > HOME </a>
-    <a href="deletedata.php" > DELETE </a>
-    <a href="updatedata.php" > UPDATE </a>
-    <a href="ofdata.php"> OFFICIALS</a>
-    <a href="gameview.php"> GAME </a>
-    <span>ADD TEAM</span>
-  </div>
-
+<?php include 'head.php'?>
   <form action="gameview.php" method="GET">
     <select name="gameID" id="gameIdList"> </select>
     <input type="submit" value="Find" name="getGame">
