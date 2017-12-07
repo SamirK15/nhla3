@@ -54,7 +54,6 @@ if(isset($_GET['getGame'])){
       </th>";
     }
     else{
-      echo
       "<th>
       $refRow[0] $refRow[1]
       </th>";
