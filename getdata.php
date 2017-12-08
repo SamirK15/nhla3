@@ -1,11 +1,13 @@
 <?php
  include 'connectdb.php';
 
+
+//The table is ordered by team as default
 $query='SELECT * FROM teams ORDER BY name';
 $team_button = "checked";
 $city_button = "unchecked";
 
-
+//If the user changes the order, they have to press sub
 if (isset($_GET['submit'])){
   if(isset($_GET['order'])){
     echo "ORDERED BY :".$_GET['order'];
@@ -19,6 +21,12 @@ if (isset($_GET['submit'])){
     }    //  Displaying Selected Value
   }
 }
+
+/*
+the following lines the echo out the html
+in a table format to display the teams
+depending on how the query is sent
+ */
 $result = pg_query($query);
 if (!$result) {
    die ("Database query failed!");

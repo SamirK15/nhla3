@@ -1,7 +1,9 @@
 body{
   background-color: rgba(75, 137, 199, 0.6);
 }
-
+a {
+    color: rgb(1, 2, 5);
+}
 }
 .table-striped{
   border: 1;

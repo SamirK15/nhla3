@@ -1,4 +1,10 @@
 <?php include 'connectdb.php';
+
+/*
+This code runs when the user clicks the Delete submit button.
+It makes a query to delete and then queries it.
+ */
+
 if (isset($_POST['delete'])){
   $delete_entry = $_POST['teamID'];
   $id = (string)$delete_entry;
