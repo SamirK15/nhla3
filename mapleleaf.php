@@ -1,4 +1,6 @@
-<?php include 'head.php'?>
+<?php include 'head.php'
+// this file is a template for the maple leaf queries'
+?>
 <button type="button" class="btn btn-secondary">
   <a href="leafgames.php"> Leaf Games </a>
 </button>

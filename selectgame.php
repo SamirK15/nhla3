@@ -1,5 +1,7 @@
 <?php include 'connectdb.php';
-
+/*
+this is like selectdata but its for gameID and city
+ */
 $query ='SELECT game_id, host_city FROM games ORDER BY game_id';
 $result = pg_query($query);
 if (!$result) {

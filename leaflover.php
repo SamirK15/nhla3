@@ -6,7 +6,7 @@ $query = "SELECT DISTINCT(lname), fname, COUNT(*) as count  FROM leafscores inne
 ) GROUP BY lname, fname ORDER BY count DESC;";
 $result = pg_query($query);
 $row = pg_fetch_row($result);
-$score = ((int)$row[2])/2;
+$score = ((int)$row[2])/2; //gives double the number of games ref'd so im fixing that
 echo "<h2>Looks like $row[1] $row[0] is the Leaf's biggest lover. $row[1] $row[0] has reffed of the leaf's $score losing games.</h2>";
 
 pg_close($connection);

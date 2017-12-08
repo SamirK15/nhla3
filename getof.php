@@ -1,6 +1,11 @@
 <?php
 include 'connectdb.php';
 
+/*
+simple querying and displaying
+the results from the query
+ */
+
 $query='SELECT * FROM officials ORDER BY lname';
 
 $result = pg_query($query);

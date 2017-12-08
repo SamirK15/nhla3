@@ -1,4 +1,8 @@
 <?php include 'connectdb.php';
+/*this code sends the teams and team id over to javascript.
+javacsript makes a <select> tag for each team
+THIS prevents the user from selecting unregistered teams
+*/
 
 $query ='SELECT team_id, name FROM teams ORDER BY team_id';
 $result = pg_query($query);

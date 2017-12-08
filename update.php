@@ -1,4 +1,7 @@
 <?php include 'connectdb.php';
+/*
+this is for delete form
+ */
 if (isset($_POST['update'])){
   $update_entry = $_POST['gameID'];
   $updated_city = $_POST['newCity'];

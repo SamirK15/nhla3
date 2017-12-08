@@ -1,4 +1,8 @@
 <?php
+/*
+this a template for the navbar, all of my php files
+that display a html page have this
+ */
 echo'
 <html>
 <head>
